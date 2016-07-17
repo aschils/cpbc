@@ -1,0 +1,223 @@
+2
+attempt001_20140920_143625.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  switch (x)
+	  {
+		  case 0:
+		  	return 0;
+		  case 1:
+		  	return -1;
+		  case 2:
+		  	return -2;
+		  default:
+			return 0;	  
+	  }
+    
+  }
+}
+attempt002_20140920_143829.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  switch (x)
+	  {
+		  case 0:
+		  	return 42;
+		  case 33:
+		  	return 9;
+		  case 50:
+		  	return -8;
+		  case 1:
+		  	return 41;
+		  case 2:
+		  	return 40;
+		  default:
+			return 0;	  
+	  }
+    
+  }
+}
+attempt003_20140920_143913.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  switch (x)
+	  {
+		  case 0:
+		  	return 42;
+		  case 33:
+		  	return 9;
+		  case 31:
+		  	return 11;
+		  case 50:
+		  	return -8;
+		  case 1:
+		  	return 41;
+		  case 2:
+		  	return 40;
+		  default:
+			return 0;	  
+	  }
+    
+  }
+}
+attempt005_20140920_155725.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  switch(x)
+	  {
+		  case 0:
+		  	return 42;
+			case 42:
+			  return 0;
+			  case 50:
+			  return -8;
+			  default:
+			  return 0;
+	  }
+  }
+}
+attempt008_20140920_042413.cs
+################
+using System;
+public class Program {
+ public static int Puzzle(int x) {
+      switch(x)
+      {
+           case 0:
+           case 1:
+           default:
+                return x;
+           case 2:
+                return x + 1;
+           case 3:
+                return x * 2;
+           case 7:
+                return x * x + x;
+     } 
+ }
+}
+attempt009_20140920_042455.cs
+################
+using System;
+public class Program {
+ public static int Puzzle(int x) {
+      switch(x)
+      {
+           case 0:
+           case 1:
+           default:
+                return x;
+           case 2:
+                return x + 1;
+           case 3:
+                return x * 2;
+           case 7:
+                return x * x + x;
+     } 
+ }
+}
+attempt010_20140920_042856.cs
+################
+using System;
+public class Program {
+ public static int Puzzle(int x) {
+      switch(x)
+      {
+           case 0:
+           case 1:
+           default:
+                return x;
+           case 2:
+                return x + 1;
+           case 3:
+                return x * 2;
+           case 7:
+                return x * x + x;
+     } 
+ }
+}
+attempt017_20140920_213134.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+		switch(x){
+			case 0: return 42; break;
+			case 1: return 41; break;
+			case 2: return 40; break;
+		}
+  }
+}
+attempt020_20140920_043920.cs
+################
+using System;
+public class Program {
+ public static int Puzzle(int x) {
+
+
+switch(x)
+{
+         
+           case 0:
+return                    x+42;
+default:
+                return x;
+             case 1:
+                return x-34;
+          
+}
+}
+}
+attempt021_20140920_044103.cs
+################
+using System;
+public class Program {
+ public static int Puzzle(int x) {
+
+
+switch(x)
+{
+         
+           case 0:
+return   x+42;
+case 1:
+return x+24;
+
+}
+}
+}
+attempt022_20140920_044118.cs
+################
+using System;
+public class Program {
+ public static int Puzzle(int x) {
+
+
+switch(x)
+{
+         
+           case 0:
+return   x+42;
+case 1:
+return x+24;
+
+default:
+                return x;
+          
+}
+}
+}
+Number of samples in cluster: 11

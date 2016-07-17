@@ -1,0 +1,30 @@
+22
+attempt012_20140920_070456.cs
+################
+using System;
+
+class Program {
+
+static void Main(string[] args)
+        {
+           int a = Puzzle(4);
+        }
+  public static int Puzzle(int x) {
+    return x;
+  }
+}
+attempt013_20140920_070509.cs
+################
+using System;
+
+class Program {
+
+static void Main(string[] args)
+        {
+           int a = Puzzle(4);
+        }
+  public static int Puzzle(int x) {
+    return x;
+  }
+}
+Number of samples in cluster: 2

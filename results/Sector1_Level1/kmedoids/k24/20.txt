@@ -1,0 +1,106 @@
+20
+attempt009_20140920_034726.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+
+int temp = 0;
+if(x == 0)
+{
+  temp = x + 42;
+}
+else if(x > 0 && x < 50)
+{
+  temp = x - 24;
+}
+else if(x >= 50)
+{
+   temp = (x-42) * (-1);
+}
+
+return temp;
+  }
+}
+attempt011_20140920_035158.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+
+int temp = 0;
+
+if(x == 0)
+{
+ temp = x + 42;
+}
+else if(x % 42 == 0)
+{
+ temp = x - 42;
+}
+else if(x % 50 == 0)
+{
+ temp = (x - 42) * (-1);
+}
+    return temp;
+  }
+}
+attempt012_20140920_035252.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+
+int temp = 0;
+
+if(x == 0)
+{
+ temp = x + 42;
+}
+else if(x > 0 && x < 50)
+{
+ temp = x - 24;
+}
+else if(x % 42 == 0)
+{
+ temp = x - 42;
+}
+else if(x % 50 == 0)
+{
+ temp = (x - 42) * (-1);
+}
+    return temp;
+  }
+}
+attempt013_20140920_052542.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+
+int temp = 0;
+
+if(x == 0)
+{
+ temp = x + 42;
+}
+else if(x > 0 && x < 50)
+{
+ temp = x - 24;
+}
+else if(x % 42 == 0)
+{
+ temp = x - 42;
+}
+else if(x % 50 == 0)
+{
+ temp = (x - 42) * (-1);
+}
+    return temp;
+  }
+}
+Number of samples in cluster: 4

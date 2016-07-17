@@ -1,0 +1,135 @@
+13
+attempt004_20140920_123459_winning1.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+int c,d,e;
+if(x>33)
+{
+ c=x-33;
+ d=c*2;
+ e=24+d;
+return x-e;
+
+}
+else
+{
+c=33-x;
+d=c*2;
+e=24-d;
+return x-e;
+}
+   
+  }
+}
+attempt006_20140920_034541.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+
+int temp;
+if(x == 0)
+{
+  temp = x + 42;
+}
+else if(x >= 50)
+{
+   temp = (x-42) * (-1);
+}
+
+return temp;
+  }
+}
+attempt007_20140920_113051.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	int y;
+	int result0 = 42;
+	int [] xArray = new int[100];
+	xArray[0] = 0;
+	xArray[1] = 33;
+	
+	if(x==0) return var0Diff;
+	else if(x>0)
+	{
+		do{
+			y++;
+		}while(y==x);
+	}
+	
+  }
+}
+attempt008_20140920_034610.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+
+int temp = 0;
+if(x == 0)
+{
+  temp = x + 42;
+}
+else if(x >= 50)
+{
+   temp = (x-42) * (-1);
+}
+
+return temp;
+  }
+}
+attempt008_20140920_113100.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	int y;
+	int result0 = 42;
+	int [] xArray = new int[100];
+	xArray[0] = 0;
+	xArray[1] = 33;
+	
+	if(x==0) return result0;
+	else if(x>0)
+	{
+		do{
+			y++;
+		}while(y==x);
+	}
+	
+  }
+}
+attempt010_20140920_113138.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+
+	int result0 = 42;
+	int [] xArray = new int[100];
+	xArray[0] = 0;
+	xArray[1] = 33;
+	
+	if(x==0) return result0;
+	else if(x>0)
+	{ 
+		int y;
+		do{
+			y++;
+		}while(y==x);
+		return 111;
+	}
+	
+  }
+}
+Number of samples in cluster: 6

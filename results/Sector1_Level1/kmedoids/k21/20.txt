@@ -1,0 +1,286 @@
+20
+attempt014_20140920_001946.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	if (x == 0)
+    	return 42;
+	
+	if (x > 33)
+	{
+		int i = x - 33;
+		int j = 24 + i;
+		
+		return x - j;
+	}
+	
+	return 0;
+  }
+}
+attempt015_20140920_001958.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	if (x == 0)
+    	return 42;
+	
+	if (x >= 33)
+	{
+		int i = x - 33;
+		int j = 24 + i;
+		
+		return x - j;
+	}
+	
+	return 0;
+  }
+}
+attempt015_20140920_114520.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = 0;
+	int result = 42;
+	
+	do{
+		if(counter == x) return result;
+		counter++;
+		result--;
+	}while(counter != x);
+  }
+}
+attempt016_20140920_114609.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = 0;
+	int result = 42;
+	
+	if(counter == x) return result;
+	do{
+		if(counter == x) return result;
+		counter++;
+		result--;
+	}while(counter != x);
+	
+	return 0;
+  }
+}
+attempt017_20140920_114728.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = 0;
+	int result = 42;
+	
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+attempt018_20140920_114839_winning1.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = 0;
+	int result = 42;
+	
+	if(counter == x) return result;
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+attempt019_20140920_114902.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = 0;
+	int result = 42;
+	
+	//if(counter == x) return result;
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+attempt020_20140920_114920_winning1.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = 0;
+	int result = 42;
+	
+	if(counter == x) return result;
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+attempt021_20140920_115105_winning1.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = -100;
+	int result = 142;
+	
+	if(counter == x) return result;
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+attempt022_20140920_115215_winning1.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = -100;
+	int result = 142;
+	
+	if(counter == x) return result;
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+attempt023_20140920_142147_winning1.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = -100;
+	int result = 142;
+	
+	if(counter == x) return result;
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+attempt024_20140920_142225_winning1.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = -100;
+	int result = 142;
+	
+	if(counter == x) return result;
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+attempt026_20140920_142327_winning1.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = -100;
+	int result = 142;
+	
+	if(counter == x) return result;
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+attempt027_20140920_142333_winning1.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = -100;
+	int result = 142;
+	
+	//if(counter == x) return result;
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+Number of samples in cluster: 14

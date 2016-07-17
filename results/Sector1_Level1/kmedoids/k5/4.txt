@@ -1,0 +1,921 @@
+4
+attempt002_20140920_001128.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  if(x == 0)
+	  {
+		 return x + 42;
+	  }
+	  else if (x > 0)
+	  {
+  	  return x - 42;
+	  } 
+  }
+}
+attempt002_20140920_142131.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  if(x==0)
+	  {return 42;}
+	  else if(x==50)
+	  {return -8;}
+    return 0;
+  }
+}
+attempt002_20140920_173338.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  int y = 0;
+	 while(x+y!=42){
+		 x=x+y;
+		 y++;
+		 if(x+y == 42) return y;
+	 }
+  }
+}
+attempt003_20140920_001214.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  if(x == 0)
+	  {
+		 return x + 42;
+	  }
+	  else if (x > 0)
+	  {
+   		 return x - 42;
+	  } 
+	  return 0;
+  }
+}
+attempt003_20140920_034402.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+
+if(x == 0)
+{
+  return x + 42;
+}
+else if(x >= 50)
+{
+   return -(x-42);
+}
+  }
+}
+attempt003_20140920_173411.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  int y = 0;
+	 while(x+y!=42){
+		 x=x+y;
+		 y++;
+		 if(x+y == 42) return y;
+	 }
+	 return y;
+  }
+}
+attempt003_20140920_211951.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  if(x==0){
+		  return x;
+	  }else{
+		  return 0;
+	  }
+  }
+}
+attempt004_20140920_123459_winning1.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+int c,d,e;
+if(x>33)
+{
+ c=x-33;
+ d=c*2;
+ e=24+d;
+return x-e;
+
+}
+else
+{
+c=33-x;
+d=c*2;
+e=24-d;
+return x-e;
+}
+   
+  }
+}
+attempt005_20140920_001437.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  if(x == 0)
+	  {
+		 return x + 42;
+	  }
+	  else if (x > 0)
+	  {
+   		 return x - 42;
+	  } 
+	  return 0;
+  }
+}
+attempt005_20140920_164802.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  if(x==0||x==50)
+    return -x+42;
+	else
+	return x;
+  }
+}
+attempt006_20140920_001359.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  
+	      if (x == 0)
+		  	return 42;
+		  else
+		  	return x - 21;
+  }
+}
+attempt006_20140920_034541.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+
+int temp;
+if(x == 0)
+{
+  temp = x + 42;
+}
+else if(x >= 50)
+{
+   temp = (x-42) * (-1);
+}
+
+return temp;
+  }
+}
+attempt007_20140920_093916.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	x+=(-42);
+	if(x>0) return -x;
+	else return x(x);
+  }
+}
+attempt007_20140920_113051.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	int y;
+	int result0 = 42;
+	int [] xArray = new int[100];
+	xArray[0] = 0;
+	xArray[1] = 33;
+	
+	if(x==0) return var0Diff;
+	else if(x>0)
+	{
+		do{
+			y++;
+		}while(y==x);
+	}
+	
+  }
+}
+attempt008_20140920_034610.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+
+int temp = 0;
+if(x == 0)
+{
+  temp = x + 42;
+}
+else if(x >= 50)
+{
+   temp = (x-42) * (-1);
+}
+
+return temp;
+  }
+}
+attempt008_20140920_093938.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	x+=(-42);
+	if(x>0) return -x;
+	else return x*x;
+  }
+}
+attempt008_20140920_113100.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	int y;
+	int result0 = 42;
+	int [] xArray = new int[100];
+	xArray[0] = 0;
+	xArray[1] = 33;
+	
+	if(x==0) return result0;
+	else if(x>0)
+	{
+		do{
+			y++;
+		}while(y==x);
+	}
+	
+  }
+}
+attempt008_20140920_130347.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+    if (x>42){
+		return x-42;
+	}
+	else{
+		return 42-x;
+	}
+	return 0;
+  }
+}
+attempt009_20140920_093959.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	x+=(-42);
+	if(x>=0) return -x;
+	else return x*x;
+  }
+}
+attempt009_20140920_130419.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+    if (x<42){
+		return x-42;
+	}
+	else{
+		return 42-x;
+	}
+	return 0;
+  }
+}
+attempt010_20140920_033434.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+    y=x-42;
+	if (y<0){
+		return -1*y;
+	}
+	else{
+		return y;
+	}
+  }
+}
+attempt010_20140920_094203_winning2.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	x+=(-42);
+	if(x>=0) return -x;
+	else return x*-1;
+  }
+}
+attempt010_20140920_113138.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+
+	int result0 = 42;
+	int [] xArray = new int[100];
+	xArray[0] = 0;
+	xArray[1] = 33;
+	
+	if(x==0) return result0;
+	else if(x>0)
+	{ 
+		int y;
+		do{
+			y++;
+		}while(y==x);
+		return 111;
+	}
+	
+  }
+}
+attempt010_20140920_130457.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+    if(x==0)
+		return 42;
+	if (x<42){
+		return x-42;
+	}
+	else{
+		return 42-x;
+	}
+	return 0;
+  }
+}
+attempt010_20140920_212424.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  if(x==42){
+		  return 0;
+	  }else{
+		  return x;
+	  }
+  }
+}
+attempt011_20140920_033446.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	int y;
+    y=x-42;
+	if (y<0){
+		return -1*y;
+	}
+	else{
+		return y;
+	}
+  }
+}
+attempt011_20140920_042906.cs
+################
+using System;
+public class Program {
+
+    public static int Puzzle(int x) {
+         if(x <= 1)
+         {
+              return x;
+         }
+         else
+         {
+              return Puzzle(x-1) + ((Puzzle(x-1) - Puzzle(x-2)) + (Puzzle(x-2) - Puzzle(x-3)));
+         } 
+    }
+}
+attempt011_20140920_212454.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  if(x==0){
+		  return 42;
+	  }else{
+		  return x;
+	  }
+  }
+}
+attempt012_20140920_033533_winning1.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	int y;
+    y=x-42;
+	if (y<0){
+		return -1*y;
+	}
+	else{
+		return -1*y;
+	}
+  }
+}
+attempt015_20140920_043109.cs
+################
+using System;
+public class Program {
+ public static int Puzzle(int x) {
+if(x) 
+        {        
+return -x;
+}
+}
+}
+attempt015_20140920_052902_winning2.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+
+if(x == 0)
+ return x = 42;
+
+    return 42 - x;
+  }
+}
+attempt015_20140920_114520.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = 0;
+	int result = 42;
+	
+	do{
+		if(counter == x) return result;
+		counter++;
+		result--;
+	}while(counter != x);
+  }
+}
+attempt016_20140920_043129.cs
+################
+using System;
+public class Program {
+ public static int Puzzle(int x) {
+if(x==1) 
+        {        
+return -x;
+}
+}
+}
+attempt016_20140920_114609.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = 0;
+	int result = 42;
+	
+	if(counter == x) return result;
+	do{
+		if(counter == x) return result;
+		counter++;
+		result--;
+	}while(counter != x);
+	
+	return 0;
+  }
+}
+attempt017_20140920_043440.cs
+################
+using System;
+public class Program {
+ public static int Puzzle(int x) {
+if(x==1) 
+        {        
+return -x;
+}
+}
+}
+attempt017_20140920_114728.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = 0;
+	int result = 42;
+	
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+attempt018_20140920_114839_winning1.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = 0;
+	int result = 42;
+	
+	if(counter == x) return result;
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+attempt019_20140920_114902.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = 0;
+	int result = 42;
+	
+	//if(counter == x) return result;
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+attempt020_20140920_114920_winning1.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = 0;
+	int result = 42;
+	
+	if(counter == x) return result;
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+attempt021_20140920_115105_winning1.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = -100;
+	int result = 142;
+	
+	if(counter == x) return result;
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+attempt022_20140920_115215_winning1.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = -100;
+	int result = 142;
+	
+	if(counter == x) return result;
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+attempt022_20140920_213421.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+		if(x==0){
+			return 42;
+		}else{
+			return x+40;
+		}
+  }
+}
+attempt023_20140920_065652.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  if(x>=42) return 42-x;
+	  else return x-42;
+	   
+  }
+}
+attempt023_20140920_142147_winning1.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = -100;
+	int result = 142;
+	
+	if(counter == x) return result;
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+attempt024_20140920_012514.cs
+################
+
+
+
+public class Program {
+
+    public static int Puzzle(int x) {
+for(int i = 1;i<=x;i++){
+if(x==i)return x;
+
+}
+        return 0;
+    }
+}
+attempt024_20140920_142225_winning1.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = -100;
+	int result = 142;
+	
+	if(counter == x) return result;
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+attempt026_20140920_142327_winning1.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = -100;
+	int result = 142;
+	
+	if(counter == x) return result;
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+attempt027_20140920_013132.cs
+################
+
+
+
+public class Program {
+
+    public static int Puzzle(int x) {
+if(x==0)
+{
+ return 42;
+ }else
+{
+    if(x>x)
+     {
+      return x/2*(-1);
+     }
+        return 0;
+    }}
+}
+attempt027_20140920_142333_winning1.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	
+	int counter = -100;
+	int result = 142;
+	
+	//if(counter == x) return result;
+	do{
+		
+		counter++;
+		result--;
+	}while(counter != x);
+	if(counter == x) return result;
+	else return 0;
+  }
+}
+attempt028_20140920_013223.cs
+################
+
+
+
+public class Program {
+
+    public static int Puzzle(int x) {
+if(x==0)
+{
+ return 42;
+ }else
+{
+    if(x>x/2*(-1))
+     {
+      return x/2*(-1);
+     }
+        return 0;
+    }}
+}
+attempt028_20140920_142721.cs
+################
+using System;
+public class Program {
+ public static int Puzzle(int x) {
+
+if ( x == 0)
+{
+
+return x+42;
+	
+}
+else 
+{
+	return x-50;
+}
+}
+}
+attempt029_20140920_142812.cs
+################
+using System;
+public class Program {
+ public static int Puzzle(int x) {
+
+if ( x == 0)
+{
+
+return x+42;
+	
+}
+else 
+{
+	return x-42;
+}
+}
+}
+attempt030_20140920_142902.cs
+################
+using System;
+public class Program {
+ public static int Puzzle(int x) {
+
+if ( x == 0)
+{
+
+return x+42;
+	
+}
+else 
+{
+	return x-34;
+}
+}
+}
+attempt031_20140920_143004.cs
+################
+using System;
+public class Program {
+ public static int Puzzle(int x) {
+
+if ( x == 0)
+{
+
+return x+42;
+	
+}
+else 
+{
+	return x-26;
+}
+}
+}
+attempt032_20140920_143026.cs
+################
+using System;
+public class Program {
+ public static int Puzzle(int x) {
+
+if ( x == 0)
+{
+
+return x+42;
+	
+}
+else 
+{
+	return x-24;
+}
+}
+}
+Number of samples in cluster: 55

@@ -1,0 +1,78 @@
+8
+attempt002_20140920_112132.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  if(x==0)
+	  x=42;
+	  else if (x==42)
+	  x=0;
+	  else if(x==50)
+	  x=-8;
+    return x;
+  }
+}
+attempt002_20140920_135849.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  if(x==0) x=42;
+	  else if(x==42)x=0;
+	  else if(x==50) x= -8;
+	  
+    return x;
+  }
+}
+attempt003_20140920_112228.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  if(x==0)
+	  x=42;
+	  else if (x==42)
+	  x=0;
+	  else if(x==50)
+	  x=-8;
+	  else
+	  x=9;
+    return x;
+  }
+}
+attempt003_20140920_135925.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  if(x==0) x=42;
+	  else if(x==42)x=0;
+	  else if(x==50) x= -8;
+	  else if(x==33) x=9;
+	  
+    return x;
+  }
+}
+attempt004_20140920_112416.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  if(x==0)
+	  x=42;
+	  else if (x==42)
+	  x=0;
+	  else if(x==50)
+	  x=-8;
+	  else if(x==33||x>33)
+	  {x=9-x;}
+    return x;
+  }
+}
+Number of samples in cluster: 5

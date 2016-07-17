@@ -1,0 +1,145 @@
+21
+attempt015_20140920_054422.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  if(x<0)
+	  {
+		  x =x+232;
+		  return x;
+	  }
+	  if(x>-1 && x<10)
+	  {
+		  x=42-x;
+		  return x;
+	  }	 
+	   if(x>9 && x<20)
+	  {
+		  x=x+22;
+		  return x;
+	  }	  
+	  if(x==50)
+	  return -8;
+	   if(x>30 && x<40)
+	   {
+		   x= (40-x)+2;
+		   return x;
+	   }	  
+    return 0;
+	
+  }
+}
+attempt016_20140920_054455.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  if(x<0)
+	  {
+		  x =x+232;
+		  return x;
+	  }
+	  if(x>-1 && x<10)
+	  {
+		  x=42-x;
+		  return x;
+	  }	 
+	   if(x>9 && x<20)
+	  {
+		  x=x+22;
+		  return x;
+	  }	 
+	   if(x>19 && x<30)
+	  {
+		  x=x+2;
+		  return x;
+	  }	  
+	  if(x==50)
+	  return -8;
+	   if(x>30 && x<40)
+	   {
+		   x= (40-x)+2;
+		   return x;
+	   }	  
+    return 0;
+	
+  }
+}
+attempt017_20140920_054655.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  if(x<0)
+	  {
+		  x =x+230;
+		  return x;
+	  }
+	  if(x>-1 && x<10)
+	  {
+		  x=42-x;
+		  return x;
+	  }	 
+	   if(x>9 && x<20)
+	  {
+		  x=x+22;
+		  return x;
+	  }	 
+	   if(x>19 && x<30)
+	  {
+		  x=x+2;
+		  return x;
+	  }	  
+	  if(x==50)
+	  return -8;
+	   if(x>30 && x<40)
+	   {
+		   x= (40-x)+2;
+		   return x;
+	   }	  
+    return 0;
+	
+  }
+}
+attempt018_20140920_054722.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  if(x<0)
+	  {
+		  x =x+227;
+		  return x;
+	  }
+	  if(x>-1 && x<10)
+	  {
+		  x=42-x;
+		  return x;
+	  }	 
+	   if(x>9 && x<20)
+	  {
+		  x=x+22;
+		  return x;
+	  }	 
+	   if(x>19 && x<30)
+	  {
+		  x=x+2;
+		  return x;
+	  }	  
+	  if(x==50)
+	  return -8;
+	   if(x>30 && x<40)
+	   {
+		   x= (40-x)+2;
+		   return x;
+	   }	  
+    return 0;
+	
+  }
+}
+Number of samples in cluster: 4

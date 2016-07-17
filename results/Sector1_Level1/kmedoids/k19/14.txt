@@ -1,0 +1,187 @@
+14
+attempt004_20140920_144123.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  switch (x)
+	  {
+		  case 0:
+		  	return 42;
+		  case 33:
+		  	return 9;
+		  case 31:
+		  	return 11;
+		  case 50:
+		  	return -8;
+		  case 71:
+		  	return -29; 
+		  case 1:
+		  	return 41;
+		  case 2:
+		  	return 40;
+		  case 32:
+		  	return 10;
+		  default:
+			return 0;	  
+	  }
+    
+  }
+}
+attempt021_20140920_002415.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  
+	  switch (x)
+	  {
+		  case 0:
+		  return 42;
+		  break;
+		  
+		  case 33:
+		  return 9;
+		  break;
+		  
+		  case 34:
+		  return 8;
+		  break;
+		  
+		  case 37:
+		  return 5;
+		  break;
+		  
+		  case 32:
+		  return 10;
+		  break;
+		  
+		  case 50:
+		  return -8;
+		  break;
+		  
+		  default:
+		  return x;
+		  break;
+	  }
+	  
+	  return 0;
+  }
+}
+attempt022_20140920_002527.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  
+	  switch (x)
+	  {
+		  case 0:
+		  return 42;
+		  break;
+		  
+		  case 33:
+		  return 9;
+		  break;
+		  
+		  case 34:
+		  return 8;
+		  break;
+		  
+		  case 37:
+		  return 5;
+		  break;
+		  
+		  case 32:
+		  return 10;
+		  break;
+		  
+		  case 50:
+		  return -8;
+		  break;
+		  
+  		  case 71:
+		  return -29;
+		  break;
+		  
+		  case 35:
+		  return 7;
+		  break;
+		  
+		  case 36:
+		  return 6;
+		  break;
+		  
+		  default:
+		  return x;
+		  break;
+	  }
+	  
+	  return 0;
+  }
+}
+attempt023_20140920_002614.cs
+################
+using System;
+
+public class Program {
+  public static int Puzzle(int x) {
+	  
+	  switch (x)
+	  {
+		  case 0:
+		  return 42;
+		  break;
+		  
+		  case 33:
+		  return 9;
+		  break;
+		  
+		  case 34:
+		  return 8;
+		  break;
+		  
+		  case 37:
+		  return 5;
+		  break;
+		  
+		  case 32:
+		  return 10;
+		  break;
+		  
+		  case 50:
+		  return -8;
+		  break;
+		  
+  		  case 71:
+		  return -29;
+		  break;
+		  
+		  case 35:
+		  return 7;
+		  break;
+		  
+		  case 36:
+		  return 6;
+		  break;
+		  
+		  case 98:
+		  return -56;
+		  break;
+		  
+		  case 1:
+		  return 41;
+		  break;
+		  
+		  default:
+		  return x;
+		  break;
+	  }
+	  
+	  return 0;
+  }
+}
+Number of samples in cluster: 4
