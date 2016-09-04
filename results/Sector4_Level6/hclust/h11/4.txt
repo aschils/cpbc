@@ -1,0 +1,54 @@
+4
+attempt002_20140920_104459.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  char[] arr = s.ToCharArray();
+	  uint fibim2 = 0, fibim1 = 0, fibi = 1;
+	  for(int i=0;i<arr.Length;++i)
+	  {
+		  arr[i] = (char)(arr[i] + fibi);
+		  fibim2 = fibim1;
+		  fibim1 = fibi;
+		  fibi = fibim1 + fibim2;
+	  }
+    return new string(arr);
+  }
+}
+attempt004_20140920_175138.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  char[] x = s.ToCharArray();
+	  int f1 = 1, f2 = 1, t;
+	  for (int i = 0; i < s.Length; i++) {
+		  x[i] = (x[i] - 'a' + f2) % 26 + 'a';
+		  t = f1;
+		  f1 += f2; f1 %= 26;
+		  f2 = t;
+	  }
+	  return new string(x);
+  }
+}
+attempt005_20140920_175154_winning3.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  char[] x = s.ToCharArray();
+	  int f1 = 1, f2 = 1, t;
+	  for (int i = 0; i < s.Length; i++) {
+		  x[i] = (char)((x[i] - 'a' + f2) % 26 + 'a');
+		  t = f1;
+		  f1 += f2; f1 %= 26;
+		  f2 = t;
+	  }
+	  return new string(x);
+  }
+}
+Number of samples in cluster: 3

@@ -1,0 +1,223 @@
+6
+attempt002_20140920_212357.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  if(s.Length == 0) return s;
+	  s[0] = GetChar(s[0], 1);
+	  if(s.Length > 1) {
+		  s[1] = GetChar(s[1], 1);
+		  var a = 1;
+		  var b = 2;
+		  for(int i=2;i<s.Length;++i){
+			  s[i] = GetChar(s[i], b);
+			  var tmp = a;
+			  a = b;
+			  b += tmp;
+		  }
+	  }
+	  return s;
+  }
+  
+  private static char GetChar(char c, int i) {
+	  return (c-'a'+i)%25+'a';
+  }
+}
+attempt003_20140920_212539.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  if(s.Length == 0) return s;
+	  StringBuilder sb = new StringBuilder(s);
+	  sb[0] = GetChar(s[0], 1);
+	  if(s.Length > 1) {
+		  sb[1] = GetChar(s[1], 1);
+		  var a = 1;
+		  var b = 2;
+		  for(int i=2;i<s.Length;++i){
+			  sb[i] = GetChar(s[i], b);
+			  var tmp = a;
+			  a = b;
+			  b += tmp;
+		  }
+	  }
+	  return sb.ToString();
+  }
+  
+  private static char GetChar(char c, int i) {
+	  return (c-'a'+i)%25+'a';
+  }
+}
+attempt004_20140920_212607.cs
+################
+using System;
+using System.Text;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  if(s.Length == 0) return s;
+	  StringBuilder sb = new StringBuilder(s);
+	  sb[0] = GetChar(s[0], 1);
+	  if(s.Length > 1) {
+		  sb[1] = GetChar(s[1], 1);
+		  var a = 1;
+		  var b = 2;
+		  for(int i=2;i<s.Length;++i){
+			  sb[i] = GetChar(s[i], b);
+			  var tmp = a;
+			  a = b;
+			  b += tmp;
+		  }
+	  }
+	  return sb.ToString();
+  }
+  
+  private static char GetChar(char c, int i) {
+	  return (c-'a'+i)%25+'a';
+  }
+}
+attempt005_20140920_212629.cs
+################
+using System;
+using System.Text;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  if(s.Length == 0) return s;
+	  StringBuilder sb = new StringBuilder(s);
+	  sb[0] = GetChar(s[0], 1);
+	  if(s.Length > 1) {
+		  sb[1] = GetChar(s[1], 1);
+		  var a = 1;
+		  var b = 2;
+		  for(int i=2;i<s.Length;++i){
+			  sb[i] = GetChar(s[i], b);
+			  var tmp = a;
+			  a = b;
+			  b += tmp;
+		  }
+	  }
+	  return sb.ToString();
+  }
+  
+  private static char GetChar(char c, int i) {
+	  return (char)((c-'a'+i)%25+'a');
+  }
+}
+attempt006_20140920_212741.cs
+################
+using System;
+using System.Text;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  if(s.Length == 0) return s;
+	  StringBuilder sb = new StringBuilder(s);
+	  sb[0] = GetChar(s[0], 1);
+	  if(s.Length > 1) {
+		  sb[1] = GetChar(s[1], 1);
+		  long a = 1;
+		  long b = 2;
+		  for(int i=2;i<s.Length;++i){
+			  sb[i] = GetChar(s[i], b);
+			  var tmp = a;
+			  a = b;
+			  b += tmp;
+		  }
+	  }
+	  return sb.ToString();
+  }
+  
+  private static char GetChar(char c, long i) {
+	  return (char)((c-'a'+i)%25+'a');
+  }
+}
+attempt007_20140920_212855_winning2.cs
+################
+using System;
+using System.Text;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  if(s.Length == 0) return s;
+	  StringBuilder sb = new StringBuilder(s);
+	  sb[0] = GetChar(s[0], 1);
+	  if(s.Length > 1) {
+		  sb[1] = GetChar(s[1], 1);
+		  long a = 1;
+		  long b = 2;
+		  for(int i=2;i<s.Length;++i){
+			  sb[i] = GetChar(s[i], b);
+			  var tmp = a;
+			  a = b;
+			  b += tmp;
+		  }
+	  }
+	  return sb.ToString();
+  }
+  
+  private static char GetChar(char c, long i) {
+	  return (char)((c-'a'+i)%26+'a');
+  }
+}
+attempt011_20140920_213242_winning2.cs
+################
+using System;
+using System.Text;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  if(s.Length == 0) return s;
+	  StringBuilder sb = new StringBuilder(s);
+	  sb[0] = GetChar(s[0], 1);
+	  if(s.Length > 1) {
+		  sb[1] = GetChar(s[1], 1);
+		  int a = 1;
+		  int b = 2;
+		  for(int i=2;i<s.Length;++i){
+			  sb[i] = GetChar(s[i], b);
+			  int tmp = a;
+			  a = b;
+			  b += tmp;
+		  }
+	  }
+	  return sb.ToString();
+  }
+  
+  private static char GetChar(char c, long i) {
+	  return (char)((c-'a'+i)%26+'a');
+  }
+}
+attempt015_20140920_213730.cs
+################
+using System;
+using System.Text;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  if(s.Length == 0) return s;
+	  StringBuilder sb = new StringBuilder(s);
+	  sb[0] = GetChar(s[0], 1);
+	  if(s.Length > 1) {
+		  sb[1] = GetChar(s[1], 1);
+		  uint a = 1;
+		  uint b = 2;
+		  for(uint i=2;i<s.Length;++i){
+			  sb[i] = GetChar(s[i], b);
+			  uint tmp = a;
+			  a = b;
+			  b += tmp;
+		  }
+	  }
+	  return sb.ToString();
+  }
+  
+  private static char GetChar(char c, uint i) {
+	  return (char)((c-'a'+i)%26+'a');
+  }
+}
+Number of samples in cluster: 8
