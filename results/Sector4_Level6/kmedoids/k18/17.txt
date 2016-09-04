@@ -1,4 +1,5 @@
 17
+medoid name: attempt014_20140920_023256.cs
 attempt014_20140920_023256.cs
 ################
 using System;
