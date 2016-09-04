@@ -1,0 +1,226 @@
+4
+attempt002_20140920_104459.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  char[] arr = s.ToCharArray();
+	  uint fibim2 = 0, fibim1 = 0, fibi = 1;
+	  for(int i=0;i<arr.Length;++i)
+	  {
+		  arr[i] = (char)(arr[i] + fibi);
+		  fibim2 = fibim1;
+		  fibim1 = fibi;
+		  fibi = fibim1 + fibim2;
+	  }
+    return new string(arr);
+  }
+}
+attempt002_20140920_111009_winning3.cs
+################
+using System;
+
+public class Program {
+  
+    public static string Puzzle(string s) {
+   
+char[] loki=s.ToCharArray();
+
+int prev=0;
+int total=1;
+
+for(int i=0;i<s.Length;i++)
+{
+    int yuko = (int)loki[i];
+kanak:
+    if ((yuko+ total) > 122)
+    {
+        yuko = yuko - 26;
+        goto kanak;
+    }
+loki[i]=(char)(yuko+total);
+int temp=total;
+total=total+prev;
+prev=temp;
+
+
+}
+
+return new string(loki);
+  } 
+}
+attempt004_20140920_105646.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  char[] arr = s.ToCharArray();
+	  uint fibim2 = 0, fibim1 = 0, fibi = 1;
+	  for(int i=0;i<arr.Length;++i)
+	  {
+		  uint newchar = fibi % 26;
+		  if(arr[i] + newchar > 'z')
+		  	arr[i] = arr[i] + newchar - 'z' + 'a' - 1;
+		  else
+		  	arr[i] = (char)(arr[i] + newchar);
+		  fibim2 = fibim1;
+		  fibim1 = fibi;
+		  fibi = fibim1 + fibim2;
+	  }
+    return new string(arr);
+  }
+}
+attempt004_20140920_175138.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  char[] x = s.ToCharArray();
+	  int f1 = 1, f2 = 1, t;
+	  for (int i = 0; i < s.Length; i++) {
+		  x[i] = (x[i] - 'a' + f2) % 26 + 'a';
+		  t = f1;
+		  f1 += f2; f1 %= 26;
+		  f2 = t;
+	  }
+	  return new string(x);
+  }
+}
+attempt005_20140920_105658_winning3.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  char[] arr = s.ToCharArray();
+	  uint fibim2 = 0, fibim1 = 0, fibi = 1;
+	  for(int i=0;i<arr.Length;++i)
+	  {
+		  uint newchar = fibi % 26;
+		  if(arr[i] + newchar > 'z')
+		  	arr[i] = (char)(arr[i] + newchar - 'z' + 'a' - 1);
+		  else
+		  	arr[i] = (char)(arr[i] + newchar);
+		  fibim2 = fibim1;
+		  fibim1 = fibi;
+		  fibi = fibim1 + fibim2;
+	  }
+    return new string(arr);
+  }
+}
+attempt005_20140920_175154_winning3.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  char[] x = s.ToCharArray();
+	  int f1 = 1, f2 = 1, t;
+	  for (int i = 0; i < s.Length; i++) {
+		  x[i] = (char)((x[i] - 'a' + f2) % 26 + 'a');
+		  t = f1;
+		  f1 += f2; f1 %= 26;
+		  f2 = t;
+	  }
+	  return new string(x);
+  }
+}
+attempt008_20140920_022724.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+var result = String.Empty;
+int n = 0;
+   foreach(var c in s)
+   {
+	   s += (char)(c+Math.Max(1,n));
+   }
+   
+   
+   return result; 
+  }
+}
+attempt009_20140920_022742.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+var result = String.Empty;
+int n = 0;
+   foreach(var c in s)
+   {
+	   s += (char)(c+Math.Max(1,n));
+	   n++;
+   }
+   
+   
+   return result; 
+  }
+}
+attempt010_20140920_022752.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+var result = String.Empty;
+int n = 0;
+   foreach(var c in s)
+   {
+	   result += (char)(c+Math.Max(1,n));
+	   n++;
+   }
+   
+   
+   return result; 
+  }
+}
+attempt011_20140920_022855.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+var result = String.Empty;
+int n = 0;
+   foreach(var c in s)
+   {
+	   var i = c+Math.Max(1,n);
+	   if (i > 97+26)
+	   i -= 26;
+	   result += (char)i;
+	   n++;
+   }
+   
+   
+   return result; 
+  }
+}
+attempt012_20140920_022927.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+var result = String.Empty;
+int n = 0;
+   foreach(var c in s)
+   {
+	   var i = c+Math.Max(1,n);
+	   if (i >= 97+26)
+	   i -= 26;
+	   result += (char)i;
+	   n++;
+   }
+   
+   
+   return result; 
+  }
+}
+Number of samples in cluster: 11

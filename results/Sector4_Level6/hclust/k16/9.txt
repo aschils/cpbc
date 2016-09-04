@@ -1,0 +1,132 @@
+9
+attempt005_20140920_103956.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    	char[] c2 = s.ToCharArray();
+		String result = "";
+		for(int i = 0 ; i<c2.Length;i++)
+		{
+			int c = (c2[i]+getFibonacci(i)-97)%26+97;
+			result += (char)c;
+		}
+		return result;
+	}
+
+	public static int getFibonacci(int n)
+	{
+		int[] array = new int[n];
+		for(int i = 0;i<n;i++)
+		{
+			a[i]=(a[i]<=1)?1:a[i-1]+a[i-2];
+		}
+		return a[n];
+	}
+}
+attempt006_20140920_104006.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    	char[] c2 = s.ToCharArray();
+		String result = "";
+		for(int i = 0 ; i<c2.Length;i++)
+		{
+			int c = (c2[i]+getFibonacci(i)-97)%26+97;
+			result += (char)c;
+		}
+		return result;
+	}
+
+	public static int getFibonacci(int n)
+	{
+		int[] a = new int[n];
+		for(int i = 0;i<n;i++)
+		{
+			a[i]=(a[i]<=1)?1:a[i-1]+a[i-2];
+		}
+		return a[n];
+	}
+}
+attempt007_20140920_104048.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    	char[] c2 = s.ToCharArray();
+		String result = "";
+		for(int i = 0 ; i<c2.Length;i++)
+		{
+			int c = (c2[i]+getFibonacci(i)-97)%26+97;
+			result += (char)c;
+		}
+		return result;
+	}
+
+	public static int getFibonacci(int n)
+	{
+		int[] a = new int[n+1];
+		for(int i = 0;i<n;i++)
+		{
+			a[i]=(a[i]<=1)?1:a[i-1]+a[i-2];
+		}
+		return a[n];
+	}
+}
+attempt008_20140920_104121.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    	char[] c2 = s.ToCharArray();
+		String result = "";
+		for(int i = 0 ; i<c2.Length;i++)
+		{
+			int c = (c2[i]+getFibonacci(i)-97)%26+97;
+			result += (char)c;
+		}
+		return result;
+	}
+
+	public static int getFibonacci(int n)
+	{
+		int[] a = new int[n+1];
+		for(int i = 0;i<=n;i++)
+		{
+			a[i]=(a[i]<=1)?1:a[i-1]+a[i-2];
+		}
+		return a[n];
+	}
+}
+attempt009_20140920_104258_winning3.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    	char[] c2 = s.ToCharArray();
+		String result = "";
+		for(int i = 0 ; i<c2.Length;i++)
+		{
+			int c = (c2[i]+getFibonacci(i)-97)%26+97;
+			result += (char)c;
+		}
+		return result;
+	}
+
+	public static int getFibonacci(int n)
+	{
+		int[] a = new int[n+1];
+		for(int i = 0;i<=n;i++)
+		{
+			a[i]=(i<=1)?1:a[i-1]+a[i-2];
+		}
+		return a[n];
+	}
+}
+Number of samples in cluster: 5

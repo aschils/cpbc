@@ -1,0 +1,29 @@
+2
+attempt002_20140920_022248.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    switch(s) {
+	case "hello":	return "ifnot";
+	case "thisisacodehuntpuzzle" :return "uikvnanxwgpvtafofjuqe";
+	default: return "";	
+	}
+	}
+  }
+}
+attempt003_20140920_022256.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    switch(s) {
+	case "hello":	return "ifnot";
+	case "thisisacodehuntpuzzle" :return "uikvnanxwgpvtafofjuqe";
+	default: return "";	
+	}
+  }
+}
+Number of samples in cluster: 2

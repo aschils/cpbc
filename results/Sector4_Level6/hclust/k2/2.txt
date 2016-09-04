@@ -1,0 +1,820 @@
+2
+attempt002_20140920_103730.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    	char[] c2 = s.toCharArray();
+		String result = "";
+		for(int i = 0 ; i<c2.length;i++)
+		{
+			int c = (c2[i]+getFibonacci(i)-97)%26+97;
+			result += (char)c;
+		}
+		return result;
+	}
+
+	public static int getFibonacci(int n)
+	{
+		return (n<=1)?1:getFibonacci(n-1)+getFibonacci(n-2);
+	}
+}
+attempt002_20140920_104459.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  char[] arr = s.ToCharArray();
+	  uint fibim2 = 0, fibim1 = 0, fibi = 1;
+	  for(int i=0;i<arr.Length;++i)
+	  {
+		  arr[i] = (char)(arr[i] + fibi);
+		  fibim2 = fibim1;
+		  fibim1 = fibi;
+		  fibi = fibim1 + fibim2;
+	  }
+    return new string(arr);
+  }
+}
+attempt002_20140920_111009_winning3.cs
+################
+using System;
+
+public class Program {
+  
+    public static string Puzzle(string s) {
+   
+char[] loki=s.ToCharArray();
+
+int prev=0;
+int total=1;
+
+for(int i=0;i<s.Length;i++)
+{
+    int yuko = (int)loki[i];
+kanak:
+    if ((yuko+ total) > 122)
+    {
+        yuko = yuko - 26;
+        goto kanak;
+    }
+loki[i]=(char)(yuko+total);
+int temp=total;
+total=total+prev;
+prev=temp;
+
+
+}
+
+return new string(loki);
+  } 
+}
+attempt002_20140920_212357.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  if(s.Length == 0) return s;
+	  s[0] = GetChar(s[0], 1);
+	  if(s.Length > 1) {
+		  s[1] = GetChar(s[1], 1);
+		  var a = 1;
+		  var b = 2;
+		  for(int i=2;i<s.Length;++i){
+			  s[i] = GetChar(s[i], b);
+			  var tmp = a;
+			  a = b;
+			  b += tmp;
+		  }
+	  }
+	  return s;
+  }
+  
+  private static char GetChar(char c, int i) {
+	  return (c-'a'+i)%25+'a';
+  }
+}
+attempt003_20140920_103748.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    	char[] c2 = s.ToCharArray();
+		String result = "";
+		for(int i = 0 ; i<c2.Length;i++)
+		{
+			int c = (c2[i]+getFibonacci(i)-97)%26+97;
+			result += (char)c;
+		}
+		return result;
+	}
+
+	public static int getFibonacci(int n)
+	{
+		return (n<=1)?1:getFibonacci(n-1)+getFibonacci(n-2);
+	}
+}
+attempt003_20140920_212539.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  if(s.Length == 0) return s;
+	  StringBuilder sb = new StringBuilder(s);
+	  sb[0] = GetChar(s[0], 1);
+	  if(s.Length > 1) {
+		  sb[1] = GetChar(s[1], 1);
+		  var a = 1;
+		  var b = 2;
+		  for(int i=2;i<s.Length;++i){
+			  sb[i] = GetChar(s[i], b);
+			  var tmp = a;
+			  a = b;
+			  b += tmp;
+		  }
+	  }
+	  return sb.ToString();
+  }
+  
+  private static char GetChar(char c, int i) {
+	  return (c-'a'+i)%25+'a';
+  }
+}
+attempt004_20140920_105646.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  char[] arr = s.ToCharArray();
+	  uint fibim2 = 0, fibim1 = 0, fibi = 1;
+	  for(int i=0;i<arr.Length;++i)
+	  {
+		  uint newchar = fibi % 26;
+		  if(arr[i] + newchar > 'z')
+		  	arr[i] = arr[i] + newchar - 'z' + 'a' - 1;
+		  else
+		  	arr[i] = (char)(arr[i] + newchar);
+		  fibim2 = fibim1;
+		  fibim1 = fibi;
+		  fibi = fibim1 + fibim2;
+	  }
+    return new string(arr);
+  }
+}
+attempt004_20140920_175138.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  char[] x = s.ToCharArray();
+	  int f1 = 1, f2 = 1, t;
+	  for (int i = 0; i < s.Length; i++) {
+		  x[i] = (x[i] - 'a' + f2) % 26 + 'a';
+		  t = f1;
+		  f1 += f2; f1 %= 26;
+		  f2 = t;
+	  }
+	  return new string(x);
+  }
+}
+attempt004_20140920_212607.cs
+################
+using System;
+using System.Text;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  if(s.Length == 0) return s;
+	  StringBuilder sb = new StringBuilder(s);
+	  sb[0] = GetChar(s[0], 1);
+	  if(s.Length > 1) {
+		  sb[1] = GetChar(s[1], 1);
+		  var a = 1;
+		  var b = 2;
+		  for(int i=2;i<s.Length;++i){
+			  sb[i] = GetChar(s[i], b);
+			  var tmp = a;
+			  a = b;
+			  b += tmp;
+		  }
+	  }
+	  return sb.ToString();
+  }
+  
+  private static char GetChar(char c, int i) {
+	  return (c-'a'+i)%25+'a';
+  }
+}
+attempt005_20140920_103956.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    	char[] c2 = s.ToCharArray();
+		String result = "";
+		for(int i = 0 ; i<c2.Length;i++)
+		{
+			int c = (c2[i]+getFibonacci(i)-97)%26+97;
+			result += (char)c;
+		}
+		return result;
+	}
+
+	public static int getFibonacci(int n)
+	{
+		int[] array = new int[n];
+		for(int i = 0;i<n;i++)
+		{
+			a[i]=(a[i]<=1)?1:a[i-1]+a[i-2];
+		}
+		return a[n];
+	}
+}
+attempt005_20140920_105658_winning3.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  char[] arr = s.ToCharArray();
+	  uint fibim2 = 0, fibim1 = 0, fibi = 1;
+	  for(int i=0;i<arr.Length;++i)
+	  {
+		  uint newchar = fibi % 26;
+		  if(arr[i] + newchar > 'z')
+		  	arr[i] = (char)(arr[i] + newchar - 'z' + 'a' - 1);
+		  else
+		  	arr[i] = (char)(arr[i] + newchar);
+		  fibim2 = fibim1;
+		  fibim1 = fibi;
+		  fibi = fibim1 + fibim2;
+	  }
+    return new string(arr);
+  }
+}
+attempt005_20140920_175154_winning3.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  char[] x = s.ToCharArray();
+	  int f1 = 1, f2 = 1, t;
+	  for (int i = 0; i < s.Length; i++) {
+		  x[i] = (char)((x[i] - 'a' + f2) % 26 + 'a');
+		  t = f1;
+		  f1 += f2; f1 %= 26;
+		  f2 = t;
+	  }
+	  return new string(x);
+  }
+}
+attempt005_20140920_212629.cs
+################
+using System;
+using System.Text;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  if(s.Length == 0) return s;
+	  StringBuilder sb = new StringBuilder(s);
+	  sb[0] = GetChar(s[0], 1);
+	  if(s.Length > 1) {
+		  sb[1] = GetChar(s[1], 1);
+		  var a = 1;
+		  var b = 2;
+		  for(int i=2;i<s.Length;++i){
+			  sb[i] = GetChar(s[i], b);
+			  var tmp = a;
+			  a = b;
+			  b += tmp;
+		  }
+	  }
+	  return sb.ToString();
+  }
+  
+  private static char GetChar(char c, int i) {
+	  return (char)((c-'a'+i)%25+'a');
+  }
+}
+attempt006_20140920_104006.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    	char[] c2 = s.ToCharArray();
+		String result = "";
+		for(int i = 0 ; i<c2.Length;i++)
+		{
+			int c = (c2[i]+getFibonacci(i)-97)%26+97;
+			result += (char)c;
+		}
+		return result;
+	}
+
+	public static int getFibonacci(int n)
+	{
+		int[] a = new int[n];
+		for(int i = 0;i<n;i++)
+		{
+			a[i]=(a[i]<=1)?1:a[i-1]+a[i-2];
+		}
+		return a[n];
+	}
+}
+attempt006_20140920_212741.cs
+################
+using System;
+using System.Text;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  if(s.Length == 0) return s;
+	  StringBuilder sb = new StringBuilder(s);
+	  sb[0] = GetChar(s[0], 1);
+	  if(s.Length > 1) {
+		  sb[1] = GetChar(s[1], 1);
+		  long a = 1;
+		  long b = 2;
+		  for(int i=2;i<s.Length;++i){
+			  sb[i] = GetChar(s[i], b);
+			  var tmp = a;
+			  a = b;
+			  b += tmp;
+		  }
+	  }
+	  return sb.ToString();
+  }
+  
+  private static char GetChar(char c, long i) {
+	  return (char)((c-'a'+i)%25+'a');
+  }
+}
+attempt007_20140920_104048.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    	char[] c2 = s.ToCharArray();
+		String result = "";
+		for(int i = 0 ; i<c2.Length;i++)
+		{
+			int c = (c2[i]+getFibonacci(i)-97)%26+97;
+			result += (char)c;
+		}
+		return result;
+	}
+
+	public static int getFibonacci(int n)
+	{
+		int[] a = new int[n+1];
+		for(int i = 0;i<n;i++)
+		{
+			a[i]=(a[i]<=1)?1:a[i-1]+a[i-2];
+		}
+		return a[n];
+	}
+}
+attempt007_20140920_212855_winning2.cs
+################
+using System;
+using System.Text;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  if(s.Length == 0) return s;
+	  StringBuilder sb = new StringBuilder(s);
+	  sb[0] = GetChar(s[0], 1);
+	  if(s.Length > 1) {
+		  sb[1] = GetChar(s[1], 1);
+		  long a = 1;
+		  long b = 2;
+		  for(int i=2;i<s.Length;++i){
+			  sb[i] = GetChar(s[i], b);
+			  var tmp = a;
+			  a = b;
+			  b += tmp;
+		  }
+	  }
+	  return sb.ToString();
+  }
+  
+  private static char GetChar(char c, long i) {
+	  return (char)((c-'a'+i)%26+'a');
+  }
+}
+attempt008_20140920_022724.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+var result = String.Empty;
+int n = 0;
+   foreach(var c in s)
+   {
+	   s += (char)(c+Math.Max(1,n));
+   }
+   
+   
+   return result; 
+  }
+}
+attempt008_20140920_104121.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    	char[] c2 = s.ToCharArray();
+		String result = "";
+		for(int i = 0 ; i<c2.Length;i++)
+		{
+			int c = (c2[i]+getFibonacci(i)-97)%26+97;
+			result += (char)c;
+		}
+		return result;
+	}
+
+	public static int getFibonacci(int n)
+	{
+		int[] a = new int[n+1];
+		for(int i = 0;i<=n;i++)
+		{
+			a[i]=(a[i]<=1)?1:a[i-1]+a[i-2];
+		}
+		return a[n];
+	}
+}
+attempt009_20140920_022742.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+var result = String.Empty;
+int n = 0;
+   foreach(var c in s)
+   {
+	   s += (char)(c+Math.Max(1,n));
+	   n++;
+   }
+   
+   
+   return result; 
+  }
+}
+attempt009_20140920_104258_winning3.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    	char[] c2 = s.ToCharArray();
+		String result = "";
+		for(int i = 0 ; i<c2.Length;i++)
+		{
+			int c = (c2[i]+getFibonacci(i)-97)%26+97;
+			result += (char)c;
+		}
+		return result;
+	}
+
+	public static int getFibonacci(int n)
+	{
+		int[] a = new int[n+1];
+		for(int i = 0;i<=n;i++)
+		{
+			a[i]=(i<=1)?1:a[i-1]+a[i-2];
+		}
+		return a[n];
+	}
+}
+attempt010_20140920_022752.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+var result = String.Empty;
+int n = 0;
+   foreach(var c in s)
+   {
+	   result += (char)(c+Math.Max(1,n));
+	   n++;
+   }
+   
+   
+   return result; 
+  }
+}
+attempt011_20140920_022855.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+var result = String.Empty;
+int n = 0;
+   foreach(var c in s)
+   {
+	   var i = c+Math.Max(1,n);
+	   if (i > 97+26)
+	   i -= 26;
+	   result += (char)i;
+	   n++;
+   }
+   
+   
+   return result; 
+  }
+}
+attempt011_20140920_213242_winning2.cs
+################
+using System;
+using System.Text;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  if(s.Length == 0) return s;
+	  StringBuilder sb = new StringBuilder(s);
+	  sb[0] = GetChar(s[0], 1);
+	  if(s.Length > 1) {
+		  sb[1] = GetChar(s[1], 1);
+		  int a = 1;
+		  int b = 2;
+		  for(int i=2;i<s.Length;++i){
+			  sb[i] = GetChar(s[i], b);
+			  int tmp = a;
+			  a = b;
+			  b += tmp;
+		  }
+	  }
+	  return sb.ToString();
+  }
+  
+  private static char GetChar(char c, long i) {
+	  return (char)((c-'a'+i)%26+'a');
+  }
+}
+attempt012_20140920_022927.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+var result = String.Empty;
+int n = 0;
+   foreach(var c in s)
+   {
+	   var i = c+Math.Max(1,n);
+	   if (i >= 97+26)
+	   i -= 26;
+	   result += (char)i;
+	   n++;
+   }
+   
+   
+   return result; 
+  }
+}
+attempt012_20140920_085955.cs
+################
+
+
+
+public class Program {
+    public static string Puzzle(string s) {
+        string s2 = "";
+        for (int i = 0; i < s.Length; i++) {
+            s2 += (char) ((s[i] - 'a' + fib(i + 1)) % 26 + 'a');
+        }
+        return s2;
+    }
+    public static int fib(int i) {
+        if (i == 0) return 0;
+        if (i == 1) return 1;
+        return fib(i - 1) + fib(i - 2);
+    }
+}
+attempt012_20140920_213449_winning2.cs
+################
+using System;
+using System.Text;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  if(s.Length == 0) return s;
+	  StringBuilder sb = new StringBuilder(s);
+	  sb[0] = (char)((s[0]-'a'+1)%26+'a');
+	  if(s.Length > 1) {
+		  sb[1] = (char)((s[1]-'a'+1)%26+'a');
+		  int a = 1;
+		  int b = 2;
+		  for(int i=2;i<s.Length;++i){
+			  sb[i] = (char)((s[i]-'a'+b)%26+'a');
+			  int tmp = a;
+			  a = b;
+			  b += tmp;
+		  }
+	  }
+	  return sb.ToString();
+  }
+}
+attempt013_20140920_023107.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+var result = String.Empty;
+int n = 0;
+   foreach(var c in s)
+   {
+	   var i = c+Fib(n);
+	   if (i >= 97+26)
+	   i -= 26;
+	   result += (char)i;
+	   n++;
+   }
+   
+   
+   return result; 
+  }
+  
+
+        public static int Fib(int n)
+        {
+            if (n < 2) return 1;
+            return Fib(n - 2) + Fib(n - 1);
+		}
+}
+attempt013_20140920_090132.cs
+################
+
+
+
+public class Program {
+    public static string Puzzle(string s) {
+        string s2 = "";
+        for (int i = 0; i < s.Length; i++) {
+            s2 += (char) ((s[i] - 'a' + fib(i + 1)) % 26 + 'a');
+        }
+        return s2;
+    }
+    public static int fib(int i) {
+        if (i == 0) return 0;
+        if (i == 1) return 1;
+        return fib(i - 1) + fib(i - 2);
+    }
+}
+attempt013_20140920_213548.cs
+################
+using System;
+using System.Text;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  if(s.Length == 0) return s;
+	  StringBuilder sb = new StringBuilder(s);
+	  sb[0] = ((s[0]-'a'+1)%26+'a');
+	  if(s.Length > 1) {
+		  sb[1] = (char)((s[1]-'a'+1)%26+'a');
+		  int a = 1;
+		  int b = 2;
+		  for(int i=2;i<s.Length;++i){
+			  sb[i] = (char)((s[i]-'a'+b)%26+'a');
+			  int tmp = a;
+			  a = b;
+			  b += tmp;
+		  }
+	  }
+	  return sb.ToString();
+  }
+}
+attempt014_20140920_023256.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s)
+        {
+            var result = String.Empty;
+            int n = 0;
+            foreach (var c in s)
+            {
+                var i = (c - 97 + Fib(n)) % 26;
+                result += (char)(i + 97);
+                n++;
+            }
+
+
+            return result;
+        }
+
+
+        public static int Fib(int n)
+        {
+            if (n < 2) return 1;
+            return Fib(n - 2) + Fib(n - 1);
+        }
+}
+attempt014_20140920_213605.cs
+################
+using System;
+using System.Text;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  if(s.Length == 0) return s;
+	  StringBuilder sb = new StringBuilder(s);
+	  sb[0] = (char)(s[0]+1);
+	  if(s.Length > 1) {
+		  sb[1] = (char)((s[1]-'a'+1)%26+'a');
+		  int a = 1;
+		  int b = 2;
+		  for(int i=2;i<s.Length;++i){
+			  sb[i] = (char)((s[i]-'a'+b)%26+'a');
+			  int tmp = a;
+			  a = b;
+			  b += tmp;
+		  }
+	  }
+	  return sb.ToString();
+  }
+}
+attempt015_20140920_023545_winning3.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s)
+    {
+        var result = String.Empty;
+        int n = 0;
+        foreach (var c in s)
+        {
+            var i = (c - 97 + Fib(n)) % 26;
+            result += (char)(i + 97);
+            n++;
+        }
+
+
+        return result;
+    }
+
+
+    public static int Fib(int n)
+    {
+        if (n < 2) return 1;
+		var result = 1;
+		var a = 1;
+		var b = 1;
+		for (int i =1; i<n; i++)
+		{
+			result = a+b;
+			a = b;
+			b = result;
+		}
+		return result;
+    }
+}
+attempt015_20140920_213730.cs
+################
+using System;
+using System.Text;
+
+public class Program {
+  public static string Puzzle(string s) {
+	  if(s.Length == 0) return s;
+	  StringBuilder sb = new StringBuilder(s);
+	  sb[0] = GetChar(s[0], 1);
+	  if(s.Length > 1) {
+		  sb[1] = GetChar(s[1], 1);
+		  uint a = 1;
+		  uint b = 2;
+		  for(uint i=2;i<s.Length;++i){
+			  sb[i] = GetChar(s[i], b);
+			  uint tmp = a;
+			  a = b;
+			  b += tmp;
+		  }
+	  }
+	  return sb.ToString();
+  }
+  
+  private static char GetChar(char c, uint i) {
+	  return (char)((c-'a'+i)%26+'a');
+  }
+}
+Number of samples in cluster: 34

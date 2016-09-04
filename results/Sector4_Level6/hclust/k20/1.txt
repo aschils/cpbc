@@ -1,0 +1,119 @@
+1
+attempt001_20140920_022105.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    return s;
+  }
+}
+attempt001_20140920_032927.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    return s;
+  }
+}
+attempt001_20140920_102656.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    return s;
+  }
+}
+attempt001_20140920_102739.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    return s;
+  }
+}
+attempt001_20140920_104554.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    return s;
+  }
+}
+attempt001_20140920_112533.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    return s;
+  }
+}
+attempt001_20140920_164800.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    return s;
+  }
+}
+attempt001_20140920_195521.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    return s;
+  }
+}
+attempt001_20140920_203756.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    return s;
+  }
+}
+attempt001_20140920_210358.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    return s;
+  }
+}
+attempt002_20140920_112536.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    return s;
+  }
+}
+attempt002_20140920_204122.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    return s;
+  }
+}
+attempt003_20140920_174456.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+    return s;
+  }
+}
+Number of samples in cluster: 13

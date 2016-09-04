@@ -1,0 +1,14 @@
+15
+attempt007_20140920_022553.cs
+################
+using System;
+
+public class Program {
+  public static string Puzzle(string s) {
+   var result = ((char)(s[0]+1)).ToString();
+   
+   
+   return result; 
+  }
+}
+Number of samples in cluster: 1
